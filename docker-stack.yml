@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  randomnumberver1:
+    image: muratozcan/aspnetcorerandom:3
+    ports:
+      - "8080:80"
+    deploy:
+      mode: replicated
+      replicas: 3
